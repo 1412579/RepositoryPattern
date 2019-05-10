@@ -14,10 +14,10 @@
 
     - B3: Mở Source -> Models -> Chọn RPContext -> Chỉnh lại connectionString cho đúng theo máy
 	
-	![alt text](https://imgur.com/BHkbwF5)
+	![Alt text](img/1.png "Title")
 
 	- B4: Mở source và chạy thử để test
 
 ### Hình ảnh DEMO 
 
-	![alt text](https://imgur.com/wEuNurc)
+	![Alt text](img/2.png "Title")
