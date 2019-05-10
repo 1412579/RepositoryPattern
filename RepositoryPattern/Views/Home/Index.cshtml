@@ -1,0 +1,39 @@
+﻿
+@using RepositoryPattern.Models
+@model ProductCategory
+@{ 
+    var lstCate = ViewBag.ListCate != null ? ViewBag.ListCate as List<ProductCategory> : null;
+}
+<div class="row" style="margin-top: 30px">
+    <div class="col-md-4">
+        <form asp-controller="Home" asp-action="Index" method="post" class="form-horizontal form-label-left">
+            <div class="form-group">
+                <label>Tên cate</label>
+                @Html.EditorFor(model => model.CategoryName, new { htmlAttributes = new { @required = "required" } })
+            </div>
+            <button type="submit" class="btn btn-primary">Tạo cate</button>
+        </form>
+        @Html.ValidationMessage("InvalidAuth", new { @class = "text-danger" })
+        @if (ViewBag.Msg != null)
+        {
+            <p class="text-success">
+                @ViewBag.Msg
+            </p>
+        }
+    </div>
+    <div class="col-md-8">
+            <div class="form-group">
+                <label>List Cate</label>
+                @if (lstCate != null && lstCate.Any())
+                {
+                    foreach (var item in lstCate)
+                    {
+                        <p>
+                            @item.CategoryId - @item.CategoryName
+                        </p>
+                    }
+                }
+            </div>
+    </div>
+</div>
+
