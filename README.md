@@ -14,10 +14,12 @@
 
     - B3: Mở Source -> Models -> Chọn RPContext -> Chỉnh lại connectionString cho đúng theo máy
 	
-	![Alt text](img/1.png "Title")
+	
 
 	- B4: Mở source và chạy thử để test
 
+![Alt text](img/1.png "Title")
+
 ### Hình ảnh DEMO 
 
-	![Alt text](img/2.png "Title")
+![Alt text](img/2.png "Title")
